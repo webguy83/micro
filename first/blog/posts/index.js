@@ -39,5 +39,6 @@ app.post('/events', (req, res) => {
 })
 
 app.listen(4000, () => {
+  console.log('hash tag bizatchhhhh')
   console.log('posts file running woohoo')
 })
