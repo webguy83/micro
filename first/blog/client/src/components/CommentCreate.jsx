@@ -4,7 +4,7 @@ const CommentCreate = ({ id }) => {
   const [comment, setComment] = useState("");
 
   const sendComment = (content) => {
-    fetch(`http://localhost:4001/post/${id}/comment`, {
+    fetch(`http://posts.com/posts/${id}/comment`, {
       method: "POST",
       body: JSON.stringify({ content }),
       headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -38,6 +38,6 @@ const CommentCreate = ({ id }) => {
       <button type="submit" className="btn btn-primary">Submit</button>
     </form>
   );
-};
+}
 
 export default CommentCreate;

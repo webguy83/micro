@@ -4,7 +4,7 @@ const PostCreate = () => {
   const [title, setTitle] = useState("");
 
   const createPost = () => {
-    fetch("http://localhost:4000/post", {
+    fetch("http://posts.com/posts/create", {
       method: "POST",
       body: JSON.stringify({ title }),
       headers: { "Content-type": "application/json; charset=UTF-8" },

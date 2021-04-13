@@ -11,7 +11,7 @@ app.post('/events', async (req, res) => {
   if (comment.type === 'CommentCreated') {
     const hasOrange = comment.data.content.includes('orange');
 
-    await axios.post('http://localhost:4005/events', {
+    await axios.post('http://event-bus-srv:4005/events', {
       type: 'CommentModerated',
       data: {
         id: comment.data.id,

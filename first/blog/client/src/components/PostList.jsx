@@ -6,7 +6,7 @@ const PostList = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4002/posts").then((res) => res.json()).then(
+    fetch("http://posts.com/posts").then((res) => res.json()).then(
       (posts) => {
         setPosts(posts);
       },
